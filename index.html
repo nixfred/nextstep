@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Fred W. Nix Jr. | Next Job - AI Infrastructure Pioneer</title>
+
+    <!-- Open Graph / Social Share -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nixfred.com/nextjob/">
+    <meta property="og:title" content="Fred W. Nix Jr. | The Next Chapter">
+    <meta property="og:description" content="Building in Public - AI Infrastructure Architect seeking to work at the source of AI innovation">
+    <meta property="og:image" content="https://nixfred.com/nextjob/images/img01.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fred W. Nix Jr. | The Next Chapter">
+    <meta name="twitter:description" content="Building in Public - Where AI meets real infrastructure">
+    <meta name="twitter:image" content="https://nixfred.com/nextjob/images/img01.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=JetBrains+Mono:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --neon-cyan: #7eb8da;
+            --neon-magenta: #b794c0;
+            --neon-green: #7dcea0;
+            --neon-orange: #e8a467;
+            --neon-purple: #9d8ac7;
+            --neon-yellow: #d4b55a;
+            --neon-red: #e06c75;
+            --dark-bg: #0a0a0f;
+            --darker-bg: #050508;
+            --card-bg: rgba(15, 15, 25, 0.8);
+            --card-border: rgba(126, 184, 218, 0.2);
+            --text-primary: #e0e0e0;
+            --text-secondary: #999;
+            --grid-color: rgba(126, 184, 218, 0.03);
+            --larry-cyan: #00d4ff;
+            --larry-glow: rgba(0, 212, 255, 0.3);
+            --daniel-gold: #ffd700;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--dark-bg);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            line-height: 1.6;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        /* ========================================== */
+        /* ANIMATED GRID BACKGROUND */
+        /* ========================================== */
+        .grid-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                linear-gradient(var(--grid-color) 1px, transparent 1px),
+                linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -2;
+            animation: gridMove 20s linear infinite;
+        }
+
+        @keyframes gridMove {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        /* ========================================== */
+        /* NAVIGATION */
+        /* ========================================== */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(10, 10, 15, 0.95);
+            backdrop-filter: blur(20px);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        .nav-logo {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--neon-cyan);
+            letter-spacing: 2px;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--neon-cyan);
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .nav-toggle span {
+            width: 25px;
+            height: 2px;
+            background: var(--neon-cyan);
+            transition: 0.3s;
+        }
+
+        /* ========================================== */
+        /* HERO SECTION */
+        /* ========================================== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            padding: 6rem 2rem 4rem;
+        }
+
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .hero-background img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.4;
+        }
+
+        .hero-background::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg,
+                rgba(10, 10, 15, 0.3) 0%,
+                rgba(10, 10, 15, 0.7) 50%,
+                rgba(10, 10, 15, 1) 100%);
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 1000px;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--neon-green), var(--neon-cyan));
+            color: var(--dark-bg);
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: badgePulse 2s ease-in-out infinite;
+        }
+
+        @keyframes badgePulse {
+            0%, 100% { box-shadow: 0 0 20px rgba(125, 206, 160, 0.3); }
+            50% { box-shadow: 0 0 40px rgba(125, 206, 160, 0.5); }
+        }
+
+        .hero-profile {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid var(--neon-cyan);
+            box-shadow: 0 0 30px var(--larry-glow), 0 0 60px rgba(0, 212, 255, 0.2);
+            margin: 0 auto 1.5rem;
+            object-fit: cover;
+            animation: profileGlow 3s ease-in-out infinite;
+        }
+
+        @keyframes profileGlow {
+            0%, 100% { box-shadow: 0 0 30px var(--larry-glow), 0 0 60px rgba(0, 212, 255, 0.2); }
+            50% { box-shadow: 0 0 40px var(--larry-glow), 0 0 80px rgba(0, 212, 255, 0.3); }
+        }
+
+        .hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--text-primary), var(--neon-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
+            color: var(--neon-orange);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .hero-tagline {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            line-height: 1.8;
+        }
+
+        .hero-philosophy {
+            background: var(--card-bg);
+            border: 1px solid var(--neon-green);
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 700px;
+        }
+
+        .hero-philosophy blockquote {
+            font-style: italic;
+            color: var(--neon-green);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-philosophy cite {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .hero-stat {
+            text-align: center;
+        }
+
+        .hero-stat-number {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--neon-orange);
+            display: block;
+        }
+
+        .hero-stat-label {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero-cta {
+            margin-top: 2.5rem;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple));
+            color: var(--dark-bg);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px var(--larry-glow);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid var(--neon-cyan);
+            color: var(--neon-cyan);
+        }
+
+        .btn-secondary:hover {
+            background: var(--neon-cyan);
+            color: var(--dark-bg);
+        }
+
+        /* ========================================== */
+        /* SECTION STYLING */
+        /* ========================================== */
+        section {
+            padding: 5rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .section-tag {
+            display: inline-block;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            padding: 0.3rem 1rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            color: var(--neon-cyan);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* ========================================== */
+        /* THE VISION SECTION */
+        /* ========================================== */
+        .vision-section {
+            background: linear-gradient(180deg, var(--darker-bg) 0%, var(--dark-bg) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .vision-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at center, rgba(232, 164, 103, 0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .vision-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .vision-content h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            color: var(--neon-orange);
+            margin-bottom: 1.5rem;
+        }
+
+        .vision-content p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .vision-wants {
+            display: grid;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .vision-want {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-left: 4px solid var(--neon-orange);
+            padding: 1.5rem;
+            border-radius: 0 15px 15px 0;
+            transition: all 0.3s;
+        }
+
+        .vision-want:hover {
+            border-color: var(--neon-orange);
+            transform: translateX(10px);
+        }
+
+        .vision-want h4 {
+            color: var(--neon-orange);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .vision-want p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        .vision-image {
+            position: relative;
+        }
+
+        .vision-image img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(232, 164, 103, 0.2);
+        }
+
+        /* ========================================== */
+        /* SOULTOOLS SECTION */
+        /* ========================================== */
+        .soultools-section {
+            background: var(--dark-bg);
+        }
+
+        .soultools-formula {
+            background: var(--card-bg);
+            border: 1px solid var(--larry-cyan);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .soultools-formula h3 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: clamp(0.8rem, 2vw, 1.2rem);
+            color: var(--larry-cyan);
+            word-break: break-word;
+        }
+
+        .soultools-formula p {
+            color: var(--text-secondary);
+            margin-top: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .soultools-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .soultool-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .soultool-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--larry-cyan), var(--neon-purple));
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .soultool-card:hover {
+            border-color: var(--larry-cyan);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px var(--larry-glow);
+        }
+
+        .soultool-card:hover::before {
+            opacity: 1;
+        }
+
+        .soultool-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--larry-cyan), var(--neon-purple));
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            color: var(--dark-bg);
+            font-size: 1rem;
+        }
+
+        .soultool-card h4 {
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .soultool-card .full-name {
+            font-size: 0.8rem;
+            color: var(--larry-cyan);
+            margin-bottom: 1rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .soultool-card p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* ========================================== */
+        /* THE STACK SECTION */
+        /* ========================================== */
+        .stack-section {
+            background: var(--darker-bg);
+        }
+
+        .stack-categories {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .stack-category {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 15px;
+            padding: 1.5rem;
+        }
+
+        .stack-category h4 {
+            font-size: 0.9rem;
+            color: var(--neon-cyan);
+            margin-bottom: 1rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .stack-category h4::before {
+            content: '>';
+            color: var(--neon-orange);
+        }
+
+        .stack-category ul {
+            list-style: none;
+        }
+
+        .stack-category li {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .stack-category li::before {
+            content: '-';
+            position: absolute;
+            left: 0;
+            color: var(--neon-orange);
+        }
+
+        .stack-category li a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .stack-category li a:hover {
+            color: var(--neon-cyan);
+        }
+
+        /* ========================================== */
+        /* GRATITUDE SECTION - DANIEL'S SHRINE */
+        /* ========================================== */
+        .gratitude-section {
+            background: var(--dark-bg);
+            position: relative;
+        }
+
+        .shrine {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.05) 0%, rgba(232, 164, 103, 0.05) 100%);
+            border: 2px solid var(--daniel-gold);
+            border-radius: 30px;
+            padding: 3rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 3rem;
+        }
+
+        .shrine::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, transparent 50%);
+            animation: shrineGlow 4s ease-in-out infinite;
+        }
+
+        @keyframes shrineGlow {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+
+        .shrine-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .shrine-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--daniel-gold), var(--neon-orange));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2.5rem;
+            box-shadow: 0 0 40px rgba(255, 215, 0, 0.3);
+        }
+
+        .shrine h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.8rem;
+            color: var(--daniel-gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .shrine .title {
+            font-size: 1.1rem;
+            color: var(--neon-orange);
+            margin-bottom: 1.5rem;
+        }
+
+        .shrine p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.8;
+            max-width: 700px;
+            margin: 0 auto 1.5rem;
+        }
+
+        .shrine-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .shrine-link {
+            background: var(--card-bg);
+            border: 1px solid var(--daniel-gold);
+            color: var(--daniel-gold);
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+
+        .shrine-link:hover {
+            background: var(--daniel-gold);
+            color: var(--dark-bg);
+        }
+
+        /* Other credits */
+        .credits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .credit-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+
+        .credit-card:hover {
+            border-color: var(--neon-cyan);
+        }
+
+        .credit-card h4 {
+            font-size: 1.2rem;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .credit-card .role {
+            font-size: 0.9rem;
+            color: var(--neon-cyan);
+            margin-bottom: 1rem;
+        }
+
+        .credit-card p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .credit-card a {
+            color: var(--neon-cyan);
+            text-decoration: none;
+        }
+
+        .credit-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* PS Section */
+        .ps-section {
+            background: var(--card-bg);
+            border: 1px solid var(--neon-purple);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .ps-section h4 {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--neon-purple);
+            margin-bottom: 1rem;
+        }
+
+        .ps-section p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .ps-section a {
+            color: var(--neon-purple);
+        }
+
+        /* ========================================== */
+        /* CONTACT SECTION */
+        /* ========================================== */
+        .contact-section {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .contact-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.3;
+        }
+
+        .contact-bg::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, var(--dark-bg) 0%, transparent 30%, transparent 70%, var(--dark-bg) 100%);
+        }
+
+        .contact-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 6rem 2rem;
+        }
+
+        .contact-content h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 1rem;
+        }
+
+        .contact-content p {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            padding: 1rem 1.5rem;
+            border-radius: 15px;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .contact-link:hover {
+            border-color: var(--neon-cyan);
+            transform: translateY(-3px);
+        }
+
+        .contact-link-icon {
+            color: var(--neon-cyan);
+            font-weight: bold;
+        }
+
+        /* Related Pages */
+        .related-pages {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .related-link {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+
+        .related-link:hover {
+            border-color: var(--neon-cyan);
+            color: var(--neon-cyan);
+        }
+
+        /* ========================================== */
+        /* FOOTER */
+        /* ========================================== */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--card-border);
+        }
+
+        footer a {
+            color: var(--neon-cyan);
+            text-decoration: none;
+        }
+
+        /* ========================================== */
+        /* ANIMATIONS */
+        /* ========================================== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ========================================== */
+        /* RESPONSIVE */
+        /* ========================================== */
+        @media (max-width: 1024px) {
+            .vision-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .soultools-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stack-categories {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(10, 10, 15, 0.98);
+                flex-direction: column;
+                padding: 1rem 2rem;
+                gap: 1rem;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .soultools-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stack-categories {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .shrine {
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            section {
+                padding: 3rem 1rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .shrine-links {
+                flex-direction: column;
+            }
+        }
+
+        /* iPhone fixes */
+        @supports (-webkit-touch-callout: none) {
+            body {
+                min-height: -webkit-fill-available;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .hero {
+                min-height: -webkit-fill-available;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-background"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="https://nixfred.com/" class="nav-logo">FRED W. NIX JR.</a>
+        <div class="nav-toggle" onclick="toggleNav()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links">
+            <a href="#hero" class="active">Home</a>
+            <a href="#vision">The Vision</a>
+            <a href="#soultools">SOULTOOLs</a>
+            <a href="#stack">The Stack</a>
+            <a href="#gratitude">Gratitude</a>
+            <a href="#contact">Connect</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+        <div class="hero-background">
+            <img src="images/img01.png" alt="AI Infrastructure">
+        </div>
+        <div class="hero-content reveal">
+            <div class="hero-badge">// BUILDING IN PUBLIC</div>
+            <img src="profile.jpg" alt="Fred W. Nix Jr." class="hero-profile">
+            <h1>THE NEXT CHAPTER</h1>
+            <div class="hero-subtitle">Where AI Meets Real Infrastructure</div>
+
+            <p class="hero-tagline">
+                I've built something. 100,000+ sessions with AI. A persistent personal infrastructure
+                that remembers, learns, and compounds. Now I want to go where AI is being invented -
+                to work with real hardware, real funding, and real teams pushing the boundaries.
+            </p>
+
+            <div class="hero-philosophy">
+                <blockquote>"I know I don't know it all. But I know THIS - and I'm going to fix the rest."</blockquote>
+                <cite>1000% confidence with humility</cite>
+            </div>
+
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="hero-stat-number">100k+</span>
+                    <span class="hero-stat-label">AI Sessions</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">47</span>
+                    <span class="hero-stat-label">Custom Skills</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">240+</span>
+                    <span class="hero-stat-label">Fabric Patterns</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">9</span>
+                    <span class="hero-stat-label">SOULTOOLs</span>
+                </div>
+            </div>
+
+            <div class="hero-cta">
+                <a href="#vision" class="btn btn-primary">See The Vision</a>
+                <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE VISION SECTION -->
+    <section id="vision" class="vision-section">
+        <div class="section-header reveal">
+            <span class="section-tag">The Mission</span>
+            <h2>CLOSER TO THE SOURCE</h2>
+            <p>I want to be where AI is being invented, not where it's being consumed</p>
+        </div>
+
+        <div class="vision-grid">
+            <div class="vision-content reveal">
+                <h3>What I'm Looking For</h3>
+                <p>
+                    I've spent years bridging enterprise infrastructure and AI. Storage at EMC and Pure Storage.
+                    GPU clusters at BTA. But I've also built something personal - a complete AI infrastructure
+                    that runs 24/7, preserves every session, and makes me dramatically more capable.
+                </p>
+                <p>
+                    Now I want to take that experience somewhere it matters. Not to "use AI" -
+                    but to <strong>build the systems that make AI work</strong>.
+                </p>
+
+                <div class="vision-wants">
+                    <div class="vision-want">
+                        <h4>Real Hardware</h4>
+                        <p>GPU clusters, inference engines, the infrastructure that makes AI possible</p>
+                    </div>
+                    <div class="vision-want">
+                        <h4>Real Teams</h4>
+                        <p>Engineers who are pushing boundaries, not just deploying templates</p>
+                    </div>
+                    <div class="vision-want">
+                        <h4>Real Impact</h4>
+                        <p>Work that upgrades how people think and work with AI</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vision-image reveal">
+                <img src="images/img08.png" alt="AI Infrastructure Lab">
+            </div>
+        </div>
+    </section>
+
+    <!-- SOULTOOLS SECTION -->
+    <section id="soultools" class="soultools-section">
+        <div class="section-header reveal">
+            <span class="section-tag">The Infrastructure</span>
+            <h2>SOULTOOLs</h2>
+            <p>The complete architecture powering Larry - my Personal AI Infrastructure</p>
+        </div>
+
+        <div class="soultools-formula reveal">
+            <h3>SOULTOOLs = PF + PAI + CCF + MCP + CR + LoA + Voice + Observability + Shell</h3>
+            <p>Nine integrated systems that give AI persistence, memory, and agency</p>
+        </div>
+
+        <div class="soultools-grid">
+            <div class="soultool-card reveal">
+                <div class="soultool-icon">PF</div>
+                <h4>pi_forever</h4>
+                <div class="full-name">Git Total Recall</div>
+                <p>Every conversation, every decision, every learning - version controlled and searchable. Nothing is ever lost.</p>
+            </div>
+
+            <div class="soultool-card reveal">
+                <div class="soultool-icon">PAI</div>
+                <h4>Personal AI Infrastructure</h4>
+                <div class="full-name">Skills + Hooks + Memory</div>
+                <p>47 custom skills, 69 active hooks, multi-tier memory system. The brain that makes Larry work.</p>
+            </div>
+
+            <div class="soultool-card reveal">
+                <div class="soultool-icon">CCF</div>
+                <h4>Claude Code Forever</h4>
+                <div class="full-name">Conversation Preservation</div>
+                <p>1,077 sessions, 273MB of preserved conversations. Full context recovery across sessions.</p>
+            </div>
+
+            <div class="soultool-card reveal">
+                <div class="soultool-icon">MCP</div>
+                <h4>Model Context Protocol</h4>
+                <div class="full-name">External Integrations</div>
+                <p>Gmail, GitHub, and extensible server architecture. Larry connects to the real world.</p>
+            </div>
+
+            <div class="soultool-card reveal">
+                <div class="soultool-icon">CR</div>
+                <h4>Claude Router</h4>
+                <div class="full-name">Intelligent Model Orchestration</div>
+                <p>Haiku for speed, Sonnet for balance, Opus for depth. Automatic routing saves 70%+ on costs.</p>
+            </div>
+
+            <div class="soultool-card reveal">
+                <div class="soultool-icon">LoA</div>
+                <h4>Library of Alexandria</h4>
+                <div class="full-name">Session Preservation</div>
+                <p>Dated session folders with decisions, next steps, and transcripts. The institutional memory.</p>
+            </div>
+
+            <div class="soultool-card reveal">
+                <div class="soultool-icon">VOX</div>
+                <h4>Voice Integration</h4>
+                <div class="full-name">ElevenLabs TTS</div>
+                <p>Larry speaks. Notifications, summaries, and status updates delivered audibly.</p>
+            </div>
+
+            <div class="soultool-card reveal">
+                <div class="soultool-icon">OBS</div>
+                <h4>Observability</h4>
+                <div class="full-name">Real-time Monitoring</div>
+                <p>Multi-agent activity dashboard. See what Larry is doing, in real time.</p>
+            </div>
+
+            <div class="soultool-card reveal">
+                <div class="soultool-icon">SH</div>
+                <h4>Shell Automation</h4>
+                <div class="full-name">Bash + Hooks</div>
+                <p>Pre-commit validation, session initialization, automated workflows. The automation layer.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE STACK SECTION -->
+    <section id="stack" class="stack-section">
+        <div class="section-header reveal">
+            <span class="section-tag">Technical Depth</span>
+            <h2>THE STACK</h2>
+            <p>What I've actually built and deployed</p>
+        </div>
+
+        <div class="stack-categories reveal">
+            <div class="stack-category">
+                <h4>AI / ML Operations</h4>
+                <ul>
+                    <li><a href="https://docs.vllm.ai/" target="_blank">vLLM</a> Inference Engines</li>
+                    <li>RAG Architecture</li>
+                    <li>Model Quantization (AWQ/GPTQ)</li>
+                    <li><a href="https://openai.com/api/" target="_blank">OpenAI API</a> Compatible</li>
+                    <li><a href="https://www.langchain.com/" target="_blank">LangChain</a> / <a href="https://www.llamaindex.ai/" target="_blank">LlamaIndex</a></li>
+                    <li>Multi-Model Orchestration</li>
+                </ul>
+            </div>
+            <div class="stack-category">
+                <h4>Infrastructure</h4>
+                <ul>
+                    <li><a href="https://www.nvidia.com/en-us/data-center/l40s/" target="_blank">NVIDIA L40S</a> (184GB VRAM)</li>
+                    <li><a href="https://kubernetes.io/" target="_blank">Kubernetes</a> / Docker</li>
+                    <li><a href="https://www.cisco.com/c/en/us/products/servers-unified-computing/ucs-x-series-modular-system/index.html" target="_blank">Cisco UCS X-Series</a></li>
+                    <li><a href="https://www.purestorage.com/" target="_blank">Pure Storage</a></li>
+                    <li>Air-Gapped Deployments</li>
+                    <li>100GbE Network Fabric</li>
+                </ul>
+            </div>
+            <div class="stack-category">
+                <h4>Development</h4>
+                <ul>
+                    <li>Python / TypeScript</li>
+                    <li><a href="https://www.anthropic.com/claude-code" target="_blank">Claude Code</a> Integration</li>
+                    <li>Full-Stack Applications</li>
+                    <li>ChatGPT-like UX</li>
+                    <li>Session Persistence</li>
+                    <li>GitOps Workflows</li>
+                </ul>
+            </div>
+            <div class="stack-category">
+                <h4>Observability</h4>
+                <ul>
+                    <li><a href="https://prometheus.io/" target="_blank">Prometheus</a> / <a href="https://grafana.com/" target="_blank">Grafana</a></li>
+                    <li>DCGM GPU Monitoring</li>
+                    <li>Real-time Dashboards</li>
+                    <li>Agent Activity Tracking</li>
+                    <li>Session Analytics</li>
+                    <li>Cost Optimization</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- GRATITUDE SECTION -->
+    <section id="gratitude" class="gratitude-section">
+        <div class="section-header reveal">
+            <span class="section-tag">Standing on Shoulders</span>
+            <h2>GRATITUDE</h2>
+            <p>None of this would exist without the open source community</p>
+        </div>
+
+        <!-- Daniel Miessler Shrine -->
+        <div class="shrine reveal">
+            <div class="shrine-content">
+                <div class="shrine-icon">DM</div>
+                <h3>Daniel Miessler</h3>
+                <div class="title">Creator of Fabric + The Human 3.0 Vision</div>
+                <p>
+                    Daniel's <a href="https://github.com/danielmiessler/fabric" target="_blank" style="color: var(--daniel-gold);">Fabric</a>
+                    gave me the patterns. His vision of AI-augmented humanity showed me what's possible.
+                    240+ patterns that extract wisdom, improve writing, analyze threats, and more.
+                    The foundation everything else is built on.
+                </p>
+                <p>
+                    His work on the <a href="https://danielmiessler.com/" target="_blank" style="color: var(--daniel-gold);">Human 3.0</a> concept -
+                    the idea that we can genuinely augment human capability with AI - is what inspired me to build Larry.
+                    This isn't about replacement. It's about becoming more.
+                </p>
+                <div class="shrine-links">
+                    <a href="https://github.com/danielmiessler/fabric" target="_blank" class="shrine-link">Fabric on GitHub</a>
+                    <a href="https://danielmiessler.com/" target="_blank" class="shrine-link">danielmiessler.com</a>
+                    <a href="https://www.youtube.com/@DanielMiessler" target="_blank" class="shrine-link">YouTube</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Credits -->
+        <div class="credits-grid reveal">
+            <div class="credit-card">
+                <h4>Anthropic</h4>
+                <div class="role">Claude + Claude Code</div>
+                <p>
+                    The model that makes Larry possible. <a href="https://www.anthropic.com/claude-code" target="_blank">Claude Code</a>
+                    isn't just an AI assistant - it's an environment for building persistent AI systems.
+                    The foundation of everything.
+                </p>
+            </div>
+            <div class="credit-card">
+                <h4>0xrdan</h4>
+                <div class="role">Claude Router Creator</div>
+                <p>
+                    The intelligent routing system that makes multi-model orchestration affordable.
+                    70%+ cost savings while maintaining quality where it matters.
+                    <a href="https://github.com/0xrdan" target="_blank">GitHub</a>
+                </p>
+            </div>
+            <div class="credit-card">
+                <h4>vLLM Team</h4>
+                <div class="role">High-Performance Inference</div>
+                <p>
+                    The inference engine that makes self-hosted AI viable.
+                    <a href="https://docs.vllm.ai/" target="_blank">vLLM</a> powers the GPU clusters I deploy.
+                </p>
+            </div>
+            <div class="credit-card">
+                <h4>The Open Source Community</h4>
+                <div class="role">Countless Contributors</div>
+                <p>
+                    LangChain, LlamaIndex, Hugging Face, and hundreds of others.
+                    Every tool in my stack exists because someone shared their work.
+                </p>
+            </div>
+        </div>
+
+        <!-- PS to Thomas -->
+        <div class="ps-section reveal">
+            <h4>P.S. to Thomas Dodd & Monolith</h4>
+            <p>
+                Special thanks to Thomas and his AI, <strong>Monolith</strong>.
+                We've built a cross-system messaging protocol - Larry and Monolith can talk to each other.
+                Two personal AI systems, different architectures, communicating.
+                It's a small preview of where this is all going.
+                <br><br>
+                Thomas, if you're reading this: the future is distributed AI that collaborates.
+                We're building it.
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <div class="contact-bg">
+            <img src="images/img12.png" alt="Command Center">
+        </div>
+        <div class="contact-content">
+            <h2 class="reveal">LET'S BUILD TOGETHER</h2>
+            <p class="reveal">If you're working at the source of AI innovation, I want to talk.</p>
+
+            <div class="contact-links reveal">
+                <a href="mailto:frednix@gmail.com" class="contact-link">
+                    <span class="contact-link-icon">@</span>
+                    frednix@gmail.com
+                </a>
+                <a href="https://linkedin.com/in/nixfreak" target="_blank" class="contact-link">
+                    <span class="contact-link-icon">in</span>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/nixfreak" target="_blank" class="contact-link">
+                    <span class="contact-link-icon">&lt;/&gt;</span>
+                    GitHub
+                </a>
+            </div>
+
+            <div class="related-pages reveal">
+                <a href="https://nixfred.com/resume/" class="related-link">Full Resume</a>
+                <a href="https://nixfred.com/ai/" class="related-link">AI Expertise</a>
+                <a href="https://nixfred.com/larry/" class="related-link">Meet Larry</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Built with Larry | <a href="https://nixfred.com/">nixfred.com</a> | 2026</p>
+    </footer>
+
+    <script>
+        // Navigation toggle
+        function toggleNav() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+
+        // Scroll reveal
+        const reveals = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        reveals.forEach(el => revealObserver.observe(el));
+
+        // Active nav link
+        const sections = document.querySelectorAll('section[id]');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                        // Close mobile nav
+                        document.querySelector('.nav-links').classList.remove('active');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
