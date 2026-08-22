@@ -1,119 +1,154 @@
-# nextstep - The WAR ROOM
+<p align="center">
+  <a href="https://nixfred.com/nextstep/">
+    <img src="images/img01.png" alt="The Next Chapter war room — a neon AI infrastructure command center" width="100%">
+  </a>
+</p>
 
-> A calling card for the next chapter of my career. Built with Larry in a single session.
+<h1 align="center">THE NEXT CHAPTER</h1>
 
-**Live at:** https://nixfred.com/nextstep/
+<p align="center">
+  <strong>AI infrastructure. Personal AI. Human capability.</strong><br>
+  A public calling card for the work—and the team—worth building next.
+</p>
 
----
+<p align="center">
+  <a href="https://nixfred.com/nextstep/"><strong>Enter the war room</strong></a>
+  ·
+  <a href="https://nixfred.com/ai/">AI infrastructure</a>
+  ·
+  <a href="https://nixfred.com/resume/">Résumé</a>
+</p>
 
-## The Story of This Site
+## The mission
 
-This site was built in one conversation between Fred and Larry (his Personal AI Infrastructure). Here's how it happened:
+`nextstep` brings three threads together: enterprise infrastructure experience, hands-on AI systems, and a conviction that personal AI should make people more capable. It describes the next role as a place close to the source of AI innovation—with serious hardware, real resources, strong collaborators, and meaningful human impact.
 
-### The Request
+> **1000% confidence with humility.** Know what has been built. Know what remains unknown. Keep moving toward it.
 
-Fred came in hot:
+```mermaid
+flowchart LR
+    A[Enterprise infrastructure] --> D[AI Infrastructure Architect]
+    B[Personal AI systems] --> D
+    C[Field delivery + enablement] --> D
+    D --> E[Build reliable AI platforms]
+    D --> F[Upgrade human capability]
+    D --> G[Learn closer to the source]
+```
 
-> "I want a WAR ROOM to build my next job in my career. I want you to take nixfred.com/resume, nixfred.com/ai, nixfred.com/larry and make a nixfred.com/nextjob and use these 3 sites to explain my next job given I'm an expert in all of this. Keep the theme going like the other sites. Graphics are MANDATORY. This site will be the site that I give to very technical people when they ask me what I am doing for the rest of my career. Help me define and build this site so that job can find me. USE EVERY SOULTOOL. USE OSINT to find similar jobs. Follow all of your skills. If you find jobs like this exist, make the site a calling card to get that job."
+<p align="center">
+  <img src="images/img08.png" alt="Illustration of an engineer inside a luminous AI infrastructure lab" width="49%">
+  <img src="images/img02.png" alt="Illustration of a large-scale AI compute environment" width="49%">
+</p>
 
-### The Questions Larry Asked
+<p align="center"><sub>Illustrative portfolio artwork expressing the mission and scale—not documentary photography of a specific facility.</sub></p>
 
-Larry didn't just start building. He asked questions first:
+## The system behind the story
 
-**Question 1: What's your IDEAL job title?**
-- Options: AI Infrastructure Architect, Personal AI Engineer, AI Practice Lead, Founding AI Engineer
-- Fred's answer: *"I'm willing to do any of those where I can make the biggest impact."*
+The site presents **SOULTOOLs**, a nine-part personal AI infrastructure assembled around continuity, context, routing, durable memory, voice, observability, and automation.
 
-**Question 2: What's your target employer type?**
-- Options: Enterprise (Fortune 500), AI-native startup, Consulting/Services, Build my own thing
-- Fred's answer: *"I have the idea and the forward thinking to meet AI as it is invented and want to get closer to the source. I want to go where I can make real money (not a vibe on the site!!!) and make real impact and upgrade peoples minds."*
+```mermaid
+flowchart TB
+    U[Human intent] --> PAI[PAI<br/>Personal AI Infrastructure]
+    PAI --> PF[PF<br/>Git total recall]
+    PAI --> CCF[CCF<br/>Conversation preservation]
+    PAI --> MCP[MCP<br/>Tool + data connections]
+    PAI --> CR[CR<br/>Model routing]
+    PAI --> LOA[LoA<br/>Session library]
+    PAI --> VOICE[Voice<br/>Audio feedback]
+    PAI --> OBS[Observability<br/>System visibility]
+    PAI --> SHELL[Shell<br/>Hooks + automation]
+```
 
-**Question 3: What's your PRIMARY selling point?**
-- Options: Larry/PAI exists, Enterprise + AI bridge, 100k+ sessions, Air-gapped/sovereign AI
-- Fred's answer: *"Add all that together including the SOULTOOLs...name each one. Give real open source respect and credit to those that deserve it with my gratitude. Daniel especially. He gets a cool shrine at the bottom for special thanks. Also a PS to Thomas Dodd and Monolith. I'm driving forward. I know I don't know it all but I do know this and I know that I keep looking at those webpages and feel like there is 50% above me and 100% beside me that I don't understand yet but I'm going to fix that. 1000% confidence with humility."*
+| Component | Role in the system |
+| --- | --- |
+| **PF — pi_forever** | Git-backed recall and continuity across work. |
+| **PAI** | The organizing layer for skills, hooks, context, and memory. |
+| **CCF** | Preservation of AI-assisted development conversations. |
+| **MCP** | Connections between models, tools, and external systems. |
+| **CR — Claude Router** | Intelligent routing across available models. |
+| **LoA — Library of Alexandria** | Dated sessions, decisions, next steps, and transcripts. |
+| **Voice** | Spoken notifications and feedback. |
+| **Observability** | Real-time visibility into the system and its activity. |
+| **Shell** | The automation fabric underneath the experience. |
 
-**Question 4: What salary/compensation range?**
-- Fred's answer: *"Don't specify any money or equity but the way you say that is make it clear that I want real hardware and real funding and real resources and team to do it. That could come from almost any source so this is not a money play. The site will show my worth."*
+<p align="center">
+  <img src="images/img04.png" alt="Illustration of a glowing neural core representing the personal AI layer" width="49%">
+  <img src="images/img06.png" alt="Illustration of an observability command center" width="49%">
+</p>
 
-**Question 5: What SOULTOOLs to highlight?**
-- Fred's answer: *"All of them"*
+## What the war room communicates
 
-**Question 6: What's the call to action?**
-- Fred's answer: *"All of the above"* (email, LinkedIn, GitHub)
+```mermaid
+flowchart TD
+    Q[What should the next chapter optimize for?]
+    Q --> S[Scale that matters]
+    Q --> T[Smarter teammates]
+    Q --> H[Human–AI impact]
+    S --> R[Real hardware + resources]
+    T --> L[Learning at the frontier]
+    H --> O[Systems people can actually use]
+```
 
-**Question 7: How to frame current situation?**
-- Fred's answer: *"Building in public"*
+The public page combines:
 
-### What Larry Built
+- a concise statement of direction;
+- the complete SOULTOOL inventory;
+- the AI, infrastructure, development, and observability stack;
+- gratitude to the open-source people and projects that shaped the work;
+- direct paths to the deeper AI portfolio and résumé.
 
-With those answers, Larry:
+<p align="center">
+  <img src="images/img09.png" alt="Illustration of a blue-lit infrastructure corridor" width="49%">
+  <img src="images/img12.png" alt="Illustration of a circular mission-control environment" width="49%">
+</p>
 
-1. **Analyzed the existing sites** - Fetched nixfred.com/resume, /ai, and /larry to understand the visual theme (neon dark mode, Orbitron headers, cyan/magenta/green palette)
+## How it was built
 
-2. **Inventoried all SOULTOOLs** - Searched the entire PAI infrastructure to document all 9 components:
-   - PF (pi_forever) - Git total recall
-   - PAI - Personal AI Infrastructure (skills, hooks, memory)
-   - CCF - Claude Code Forever (conversation preservation)
-   - MCP - Model Context Protocol servers
-   - CR - Claude Router (intelligent routing)
-   - LoA - Library of Alexandria (session preservation)
-   - Voice - ElevenLabs TTS notifications
-   - Observability - Real-time monitoring dashboard
-   - Shell - Bash automation and hooks
+The site began as one detailed conversation with Larry, Fred's personal AI infrastructure. The request combined the existing résumé, AI portfolio, and Larry story into a single technical calling card. The resulting workflow moved from questions and research to system inventory, narrative design, implementation, and public deployment.
 
-3. **Researched the landscape** - Launched parallel agents to:
-   - Find similar job roles in the market
-   - Research the Personal AI Infrastructure space
-   - Identify who else is building in this domain
+```mermaid
+flowchart LR
+    A[Intent + constraints] --> B[Clarifying questions]
+    B --> C[Portfolio + role research]
+    C --> D[SOULTOOL inventory]
+    D --> E[Narrative + visual design]
+    E --> F[Static site implementation]
+    F --> G[GitHub Pages]
+```
 
-4. **Built the site** - Created a complete HTML page matching the existing theme:
-   - Hero with "BUILDING IN PUBLIC" badge
-   - Philosophy quote: "I know I don't know it all. But I know THIS - and I'm going to fix the rest."
-   - Complete SOULTOOLs breakdown with the formula
-   - Daniel Miessler shrine with gold accents
-   - PS section for Thomas Dodd and Monolith
-   - All contact methods
+## Repository shape
 
-5. **Deployed to GitHub** - Created private repo, enabled GitHub Pages
+This is a deliberately lightweight static site. There is no framework, package installation, compilation step, runtime API, or database.
 
-### The Philosophy
+```text
+.
+├── index.html        # Complete page: markup, styles, and interactions
+├── profile.jpg       # Hero portrait
+├── images/
+│   └── img01.png … img12.png
+└── README.md
+```
 
-This site embodies Fred's approach:
+The page uses inline CSS and JavaScript for responsive navigation, scroll-aware section state, reveal animations, counters, and visual effects. Google Fonts is its only page-level external resource.
 
-> **"1000% confidence with humility"**
+## Run locally
 
-He knows what he's built. He knows what he doesn't know. He's going to fix the rest.
-
-### Technical Details
-
-- **Built with:** Larry (PAI) + Claude Opus 4.5
-- **Design system:** Matches nixfred.com theme (neon dark mode)
-- **Fonts:** Orbitron (headers), Inter (body), JetBrains Mono (code)
-- **Colors:** Cyan (#7eb8da), Magenta (#b794c0), Green (#7dcea0), Orange (#e8a467)
-- **Hosted:** GitHub Pages (private repo)
-
-### Credits
-
-- **Daniel Miessler** - Fabric patterns, Human 3.0 vision
-- **Anthropic** - Claude + Claude Code
-- **0xrdan** - Claude Router
-- **Thomas Dodd** - Monolith cross-system collaboration
-- **The open source community** - Everything else
-
----
-
-## Local Development
+From the repository root:
 
 ```bash
-cd /home/pi/Projects/next_job
 python3 -m http.server 9000
-# Visit http://localhost:9000
 ```
+
+Open `http://localhost:9000`. No installation or build command is required.
 
 ## Deployment
 
-Automatic via GitHub Pages on push to main branch.
+GitHub Pages publishes the repository root from `main` at [`nixfred.com/nextstep/`](https://nixfred.com/nextstep/).
+
+## Gratitude
+
+The site explicitly credits the shoulders it stands on, including [Daniel Miessler](https://danielmiessler.com/) and [Fabric](https://github.com/danielmiessler/fabric), Anthropic and Claude Code, [0xrdan](https://github.com/0xrdan), the [vLLM](https://docs.vllm.ai/) team, Thomas Dodd and Monolith, and the wider open-source community.
 
 ---
 
-*Built in one session. January 23, 2026.*
+<p align="center"><strong>Building in public. Looking for the room where this work can matter most.</strong></p>
